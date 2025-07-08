@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <sys/socket.h>
+#include <netinet/in.h>
+
 
 int main(int argc, const char * argv[]) {
     // Step 1: Create a socket
@@ -19,6 +21,9 @@ int main(int argc, const char * argv[]) {
     }
     
     std::cout << "Socket created successfully. File descriptor = " << server_fd << "\n";
+    
+    // Step 3: Create address structure
+    sockaddr_in server_addr{};  // zero-initializes the structure
     
     return 0;
 }
