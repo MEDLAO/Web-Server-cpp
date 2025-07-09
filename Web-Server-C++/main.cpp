@@ -25,5 +25,14 @@ int main(int argc, const char * argv[]) {
     // Step 3: Create address structure
     sockaddr_in server_addr{};  // zero-initializes the structure
     
+    // Set the address family to IPv4
+    server_addr.sin_family = AF_INET;
+    
+    // Set the port number to 8080 and convert it to network byte order
+    server_addr.sin_port = htons(8080);
+    
+    // Accept connections on any IP address of this machine (0.0.0.0)
+    server_addr.sin_addr.s_addr = INADDR_ANY;
+    
     return 0;
 }
