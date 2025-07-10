@@ -34,5 +34,11 @@ int main(int argc, const char * argv[]) {
     // Accept connections on any IP address of this machine (0.0.0.0)
     server_addr.sin_addr.s_addr = INADDR_ANY;
     
+    // Step 4: Bind the socket to the IP/port we set in server_addr
+    if (bind(server_fd, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
+        std::cerr << "Binding failed.\n";
+        return 1;
+    }
+
     return 0;
 }
