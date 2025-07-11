@@ -39,6 +39,14 @@ int main(int argc, const char * argv[]) {
         std::cerr << "Binding failed.\n";
         return 1;
     }
+    
+    // Step 5: Listen for incoming connections
+    if (listen(server_fd, 5) < 0) {
+        std::cerr << "Listening failed. \n";
+        return 1;
+    }
+    
+    std::cout << "Server is listening on port 8080... \n";
 
     return 0;
 }
