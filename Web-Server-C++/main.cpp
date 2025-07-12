@@ -8,6 +8,7 @@
 #include <iostream>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <unistd.h>
 
 
 int main(int argc, const char * argv[]) {
@@ -47,6 +48,19 @@ int main(int argc, const char * argv[]) {
     }
     
     std::cout << "Server is listening on port 8080... \n";
-
+    
+    // Keep the server running so we can test it
+    std::cout << "Press Enter to stop the server... \n";
+    std::cin.get(); // Wait forn the user to press Enter
+    
+    // Step 6: Accepting incoming requests
+    sockaddr_in client_addr;
+    
+    socklen_t client_len = sizeof(client_addr);
+    
+    int client_socket = accept(server_fd, (struct sockaddr*)&client_addr, &client_len);
+    
+    close(server_fd);
+    
     return 0;
 }
