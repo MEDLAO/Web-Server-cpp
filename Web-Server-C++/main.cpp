@@ -60,6 +60,10 @@ int main(int argc, const char * argv[]) {
     
     int client_socket = accept(server_fd, (struct sockaddr*)&client_addr, &client_len);
     
+    char buffer[1024] = {0};
+    
+    // Step 7: Read data sent by the client
+    
     close(server_fd);
     
     return 0;
