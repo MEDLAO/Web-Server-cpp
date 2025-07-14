@@ -63,6 +63,8 @@ int main(int argc, const char * argv[]) {
     char buffer[1024] = {0};
     
     // Step 7: Read data sent by the client
+    int bytes_read = read(client_socket, buffer, sizeof(buffer));
+    
     
     close(server_fd);
     
