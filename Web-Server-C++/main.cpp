@@ -64,7 +64,11 @@ int main(int argc, const char * argv[]) {
     
     // Step 7: Read data sent by the client
     int bytes_read = read(client_socket, buffer, sizeof(buffer));
-    
+    if (bytes_read < 0) {
+        std::cerr << "Failed to read from client.\n";  // Print an error message if read() failed
+    } else {
+        std::cout << "Received from client: " << buffer << "\n";  // Otherwise, print the received data
+    }
     
     close(server_fd);
     
