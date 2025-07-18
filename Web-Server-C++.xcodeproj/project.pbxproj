@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BF8287CD2E1B21B00086353E /* Web-Server-C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Web-Server-C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC90EE52E1DBA4300DF0699 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BFC90EE72E2ADCAE00DF0699 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC90EE52E1DBA4300DF0699 /* main.cpp */,
+				BFC90EE72E2ADCAE00DF0699 /* README.md */,
 			);
 			path = "Web-Server-C++";
 			sourceTree = "<group>";
