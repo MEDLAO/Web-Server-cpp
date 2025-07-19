@@ -42,6 +42,7 @@
 		BF8287C42E1B21B00086353E = {
 			isa = PBXGroup;
 			children = (
+				BFC90EE72E2ADCAE00DF0699 /* README.md */,
 				BF8287CF2E1B21B00086353E /* Web-Server-C++ */,
 				BF8287CE2E1B21B00086353E /* Products */,
 			);
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				BFC90EE52E1DBA4300DF0699 /* main.cpp */,
-				BFC90EE72E2ADCAE00DF0699 /* README.md */,
 			);
 			path = "Web-Server-C++";
 			sourceTree = "<group>";
