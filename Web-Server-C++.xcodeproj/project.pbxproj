@@ -26,6 +26,7 @@
 		BF8287CD2E1B21B00086353E /* Web-Server-C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Web-Server-C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC90EE52E1DBA4300DF0699 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BFC90EE72E2ADCAE00DF0699 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BFC90EE82E2E916400DF0699 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		BF8287C42E1B21B00086353E = {
 			isa = PBXGroup;
 			children = (
+				BFC90EE82E2E916400DF0699 /* Media.xcassets */,
 				BFC90EE72E2ADCAE00DF0699 /* README.md */,
 				BF8287CF2E1B21B00086353E /* Web-Server-C++ */,
 				BF8287CE2E1B21B00086353E /* Products */,
